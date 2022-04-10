@@ -1,0 +1,84 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+  <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="newclock.css">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+  <!--All Code for  Clock-->
+  <div id="mainframe">
+    <div class="clock">
+        <div class="outer-clock-face">
+          <div class="marking marking-one"></div>
+          <div class="marking marking-two"></div>
+          <div class="marking marking-three"></div>
+          <div class="marking marking-four"></div>
+          <div class="inner-clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+          </div>
+        </div>
+      </div>
+      <div id = "clock" onload="currentTime()">
+      </div> 
+    </div>
+
+    <!--All Code for Timer-->
+    <div id="timer">
+      <div id="mainstopwatch">
+        <label id="name">Stopwatch</label>
+        <div class="maintime">
+            <span id="mainminute" value="0">00</span>
+            <span id="mainsecond" value="0">00</span>
+            <span id="milliseconds" value="0">00</span>
+        </div>
+       
+        <button id="start" onclick="start();">Start</button>
+        <button id="start" onclick="stop();">Stop</button>
+        <button id="start" onclick="reset();">Reset</button>
+    </div>
+    </div>
+
+    <!--Insert Alarm Code within this div Container below-->
+    <div id="alarm">
+      <h2>Set Alarm Time</h2>
+      <label>
+        <div>
+          <select id= "alarmhrs"></select>
+        </div>
+      </label>
+      <label>
+        <div>
+          <select id="alarmmins"></select>
+        </div>
+      </label>
+      <label>
+        <div>
+          <select id="alarmsecs"></select>
+        </div>
+      </label>
+      <label>
+        <div>
+          <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <div>
+      <button id="clearButton" onclick="a"></button>
+    </div>
+    
+  <script src="clockfunc.js"></script>
+  <script src="clock.js"></script>
+  <script src=""></script>
+</body>
+</html>
